@@ -1,5 +1,6 @@
-function product(a, b) {
-  res = a + b;
-  return res;
+gl = 123;
+function check() {
+  gl = 455;
 }
-console.log("prod" + product(5, 6));
+check();
+window.console && console.log("gl = " + gl);
