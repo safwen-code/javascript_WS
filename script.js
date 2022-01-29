@@ -1,6 +1,8 @@
-gl = 123;
-function check() {
-  gl = 455;
+things = {
+  golf: "golball",
+  karate: "technical fight",
+  football: "stades",
+};
+for (thing in things) {
+  window.console && console.log("thing => ", things[thing]);
 }
-check();
-window.console && console.log("gl = " + gl);
