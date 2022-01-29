@@ -1,8 +1,8 @@
-things = {
-  golf: "golball",
-  karate: "technical fight",
-  football: "stades",
-};
-for (thing in things) {
-  window.console && console.log("thing => ", things[thing]);
+console.dir(document.getElementById("message"));
+st = document.getElementById("message").innerHTML;
+function shunk(st) {
+  alert("hi there " + st);
+  document.getElementById("message").innerHTML = "josef";
 }
+
+shunk(st);
