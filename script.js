@@ -5,4 +5,16 @@ function shunk(st) {
   document.getElementById("message").innerHTML = "josef";
 }
 
+counter = 1;
+list = document.getElementById("the-list");
+console.log(list);
+function add() {
+  var x = document.createElement("li");
+  x.className = "list-item";
+  x.innerHTML = "the counter is " + counter;
+  list.appendChild(x);
+  counter++;
+}
+
+add();
 shunk(st);
